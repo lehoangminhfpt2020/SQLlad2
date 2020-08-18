@@ -74,6 +74,6 @@ ALTER TABLE IssueDetails ALTER COLUMN MemberCode INT NOT NULL
 ALTER TABLE IssueDetails ADD CONSTRAINT PK PRIMARY KEY (BookCode, MemberCode)
 
 --i. Chèn dữ liệu hợp lý cho các bảng(Sử dụng SQL)
-INSERT INTO Book (BookCode ,BookTitle ,Author ,Editition ,BookPrice ,Copies) VALUE (1,'Doremon', 'Fujiko.F.Fujio ',1,25,10)
-INSERT INTO Member (MemberCode,Name,Address,PhoneNumber) VALUE (1,'Minh','HaNoi',123456)
-INSERT INTO IssueDetails (BookCode,MemberCode,IssueDate,ReturnDate) VALUE (1,1,20201008,20201808)
+INSERT INTO Book (BookCode ,BookTitle ,Author ,Editition ,BookPrice ,Copies) VALUES (1,'Doremon', 'Fujiko.F.Fujio ',1,25,10)
+INSERT INTO Member (MemberCode,Name,Address,PhoneNumber) VALUES (1,'Minh','HaNoi',123456)
+INSERT INTO IssueDetails (BookCode,MemberCode,IssueDate,ReturnDate) VALUES (1,1,20201008,20201808)
